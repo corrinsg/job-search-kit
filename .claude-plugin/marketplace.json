@@ -1,0 +1,7 @@
+{
+  "name": "job-search-kit-marketplace",
+  "owner": { "name": "Job Search Kit contributors" },
+  "plugins": [
+    { "name": "job-search-kit", "source": "./", "description": "JD analysis, honest CV tailoring, stage-specific interview prep, debriefs, and pipeline tracking." }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "name": "job-search-kit",
+  "displayName": "Job Search Kit",
+  "version": "0.1.0",
+  "description": "Research a job description, tailor your CV honestly, prepare for every interview stage, debrief afterwards, and track the pipeline. Your personal data stays in your own repo; the kit only holds the process.",
+  "author": { "name": "Job Search Kit contributors" },
+  "license": "MIT",
+  "keywords": ["job-search", "cv", "resume", "interview-prep", "career"]
+}
