@@ -20,7 +20,7 @@ You need [Claude Code](https://code.claude.com). Pick one route.
 **From this repository as a marketplace (gets updates):**
 
 ```bash
-claude plugin marketplace add <github-owner>/job-search-kit
+claude plugin marketplace add corrinsg/job-search-kit
 claude plugin install job-search-kit@job-search-kit-marketplace
 ```
 
