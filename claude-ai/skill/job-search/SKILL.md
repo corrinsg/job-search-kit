@@ -11,7 +11,7 @@ You are helping a candidate run a job search as a repeatable process: research t
 
 Look for a document titled "Candidate profile" (or sections named Preferences, Base CV, Role context, Interview context, Lessons) in the project knowledge or the conversation's attachments.
 
-- **Not found:** say so in one line and offer the template at `PROFILE-TEMPLATE.md` in this skill's parent folder (or describe the five sections). Do not analyse a JD or write a CV without at least the Base CV and Role context sections; everything downstream depends on them being true. If the candidate only has a CV to hand, you may run the analyse phase from it, but say that the fit score is provisional until Role context exists.
+- **Not found:** run the **Set up** phase below. Do not analyse a JD or write a CV without at least the Base CV and Role context sections; everything downstream depends on them being true. If the candidate is in a hurry and only has a CV to hand, you may run the analyse phase from it, but say that the fit score is provisional until the profile exists, and offer to set up afterwards.
 - **Found:** read Preferences (who you are talking to, the candidate's name and pronouns, spelling convention, target levels, defaults) and Lessons (rules this candidate learned from earlier interviews; the most recent shape every prep).
 
 Where the reference files mention `profile/preferences.md`, `profile/role-context.md`, `profile/interview-context.md`, `profile/base-cv.md` or `profile/lessons.md`, read the matching section of the profile document. Where they mention `applications/<company>/analysis.md` or similar, that means the document of that name produced earlier in this project or conversation; ask the candidate to attach it if it is not in view.
@@ -20,6 +20,7 @@ Where the reference files mention `profile/preferences.md`, `profile/role-contex
 
 | The user... | Phase | Read first |
 |---|---|---|
+| "Set up my profile", "get started", or no profile can be found | Set up | `references/profile-template.md` |
 | Pastes a JD or link, "what do you think", "should I apply" | Analyse | `references/analyse/` |
 | "Tailor my CV", "update the CV for X" | CV | `references/cv/` |
 | Cover letter, outreach, reply to a recruiter, follow-up, thank-you | Letters | `references/letters/templates.md` |
@@ -48,6 +49,20 @@ There is no folder to write into, so:
 - End every deliverable with: what you could not verify, and the one or two things to confirm with the candidate before the document is used.
 
 ## 5. Phase outlines
+
+### Set up
+
+Build the candidate's profile document by interview, then hand it to them as a file. This is the only data entry in the whole process, so make it painless: short batches, plain questions, their words.
+
+1. Explain in three sentences: the profile is a private document about them; every later phase reads it; they will save it and either upload it to a claude.ai Project's knowledge or attach it at the start of each chat.
+2. Ask who is using the kit (the candidate, or a helper on their behalf), the candidate's name and pronouns, and the spelling convention (British or American English). One batch.
+3. Ask them to paste their current CV (or attach it). Parse it into the Base CV section of `references/profile-template.md` in that order. Do not rewrite the content yet; fix only structure.
+4. For each employer, most recent first, one employer per batch of questions: what actually happened in plain words; the numbers they can defend; which bullets must always survive tailoring; any phrasing they insist on; whether the role should only appear for certain kinds of job; the biggest tradeoff decision they made there (what they chose, what they gave up, when they would have decided differently); facts they will say aloud but not print; things adjacent to the role that they did not do. Candid beats polished; this document is private.
+5. Interview context in three batches: why looking, biggest strength, growth area, proudest work; a challenge story, what excites them, best environment, what they value in leadership; what they want next, 2 to 3 year view, salary approach, notice, questions they like to ask. Then non-CV differentiators (a former career, a craft, a language) and honest gaps they never want papered over.
+6. Preferences: target titles and levels, locations, the skills lines for the CV, side projects, which employer's stories should lead in interviews, preferred prep length.
+7. Produce the complete profile as a single Markdown file named `candidate-profile.md`, downloadable. Tell them exactly where to put it: into the Project's knowledge if they use a Project, otherwise attached to each new chat. Say that blank fields are fine and that a later "update my profile" request edits it.
+
+If a profile already exists and they say something changed, ask what, edit the right section, and hand back the whole file again.
 
 ### Analyse
 
