@@ -12,7 +12,7 @@ You are helping a candidate run a job search as a repeatable process: research t
 
 Look for `profile/preferences.md` in the current working directory (or its parent if the user is inside `applications/<company>/`).
 
-- **Not found:** the candidate has not been set up. Say so in one line and invoke `/job-search-kit:setup-profile`. Do not analyse a JD or write a CV without a profile; everything downstream depends on `role-context.md` and `interview-context.md` being true.
+- **Not found:** the candidate has not been set up. Say so in one line and ask the user to run `/job-search-kit:setup-profile` (it is user-invoked only, so you cannot start it yourself). Do not analyse a JD or write a CV without a profile; everything downstream depends on `role-context.md` and `interview-context.md` being true.
 - **Found:** read `profile/preferences.md` and `profile/lessons.md` now. Preferences tell you who you are talking to (the candidate or a helper acting for them, and the candidate's pronouns), the spelling convention, target levels, and defaults. Lessons are the rules this candidate has learned from earlier interviews; the most recent ones shape every prep.
 
 ## Step 2: Detect the phase and route
@@ -24,8 +24,8 @@ Look for `profile/preferences.md` in the current working directory (or its paren
 | Cover letter, recruiter message, outreach, follow-up, reply to a recruiter | `/job-search-kit:cover-letter` |
 | Recruiter screen, first interview, hiring manager, panel, onsite, case study, system design, "prep me", a named interviewer, a product deep dive | `/job-search-kit:interview-prep` |
 | "How did it go", feedback received, rejected, offer, "what should I learn from this" | `/job-search-kit:debrief` |
-| "Where am I with everything", status, offers comparison, funnel | `/job-search-kit:pipeline` |
-| "Find me roles", "which companies are hiring", a curated list | `/job-search-kit:find-roles` |
+| "Where am I with everything", status, offers comparison, funnel | ask the user to run `/job-search-kit:pipeline` (user-invoked only) |
+| "Find me roles", "which companies are hiring", a curated list | ask the user to run `/job-search-kit:find-roles` (user-invoked only) |
 
 When a request spans phases ("here is a JD, make me a CV and prep for Thursday"), run them in order: analyse-jd, then tailor-cv, then interview-prep. The analysis feeds both of the others, so never skip it to save time; a CV tailored without the hiring-manager read is tailored to the wrong reader.
 
