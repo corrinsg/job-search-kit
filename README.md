@@ -112,6 +112,10 @@ Four short files in `references/` are read by every skill:
 
 They came from several months of real applications and the mistakes made along the way. Each rule says why it exists.
 
+## Using it without Claude Code (claude.ai)
+
+A portable edition lives in `claude-ai/`: project instructions to paste into a claude.ai Project, a single profile document to upload as project knowledge, and the same templates packaged as a custom skill (`claude-ai/job-search.zip`). It covers analysis, CV tailoring, letters, interview prep and debriefs. The HTML twins, tracker, pipeline page, funnel and role discovery need a folder on disk and stay Claude Code only. See `claude-ai/README.md`.
+
 ## Privacy
 
 - Keep your workspace repository private. `profile/role-context.md` is meant to be candid.
