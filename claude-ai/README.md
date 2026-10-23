@@ -24,7 +24,9 @@ If you cannot find an upload button, your plan or your organisation does not all
 
 Start a new chat and type:
 
-> Set up my job search profile
+> Use the job-search skill to set up my job search profile
+
+Naming the skill is not always necessary, because Claude picks skills by reading their descriptions, but saying "use the job-search skill" makes sure it happens, especially the first time. If Claude ever answers without using it (you will notice: no batches of questions, no file at the end), just add "use the job-search skill" to your message.
 
 Claude will ask you questions in small batches: your current CV, what really happened in each job, your own answers to the usual interview questions, and a few preferences. Answer in plain words; it is private. This takes 30 to 60 minutes and you only do it once.
 
@@ -39,13 +41,13 @@ Pick one:
 
 ## Step 5: Use it
 
-In a chat (inside the Project if you made one), paste a job description and say what you want. For example:
+In a chat (inside the Project if you made one), paste a job description and say what you want. Mention the skill the first time in each chat. For example:
 
-- "Analyse this role for me" (research, who the hiring manager is, a fit score out of 10, salary research)
+- "Use the job-search skill to analyse this role for me" (research, who the hiring manager is, a fit score out of 10, salary research)
 - "Tailor my CV for it"
 - "Write a cover letter"
-- "Prep me for a recruiter screen on Thursday" or "prep me for a panel with these people: ..."
-- "Debrief: here is how the interview went"
+- "Use the job-search skill to prep me for a recruiter screen on Thursday" or "prep me for a panel with these people: ..."
+- "Use the job-search skill to debrief: here is how the interview went"
 
 Claude gives you each result as a file. Save them in a folder named after the company. When Claude asks for an earlier file (for example the analysis, when tailoring the CV), attach it.
 
@@ -53,7 +55,7 @@ Claude gives you each result as a file. Save them in a folder named after the co
 
 After each interview, ask for a debrief. Claude will give you a short "lesson" block. Paste it into the **Lessons** section at the bottom of your `candidate-profile.md`, save, and re-upload the file to your Project (or attach the new version next time). The next prep will use it.
 
-To change anything about you (new job, new number, new preference), say "update my profile" and attach the file. Claude edits it and gives it back.
+To change anything about you (new job, new number, new preference), say "use the job-search skill to update my profile" and attach the file. Claude edits it and gives it back.
 
 ## If skills are not available on your plan
 

@@ -1,6 +1,6 @@
 ---
 name: job-search
-description: Run a job search as a process in claude.ai. Use whenever the user pastes a job description or link, asks whether to apply, wants a CV or resume tailored, a cover letter or recruiter message, preparation for a recruiter screen, interview, panel, case study or system design round, or a debrief after an interview or rejection. Reads the candidate's profile document and applies strict honesty and writing rules.
+description: Job search assistant. Use whenever the user mentions the job-search skill, asks to set up or update their job search profile, pastes a job description or link, asks whether to apply, wants a CV or resume tailored, a cover letter or recruiter message, preparation for a recruiter screen, interview, panel, case study or system design round, or a debrief after an interview or rejection. Reads the candidate profile document and applies strict honesty and writing rules.
 ---
 
 # Job search (claude.ai edition)
